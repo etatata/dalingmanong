@@ -183,10 +183,33 @@ export default defineUserConfig({
             activeMatch: '^/foo/',
           },
         ],
-        '/php/': [
+        '/question/': [
           {
-            text: 'Reference',
-            children: ['/reference/cli.md', '/reference/config.md'],
+        
+            children: [
+              {
+                text: '微信相关',
+                link: '/question/wechat.md',
+                // 该元素在当前路由路径是 /foo/ 开头时激活
+                // 支持正则表达式
+                activeMatch: '^/foo/',
+              },
+              {
+                text: '前端相关',
+                children: ['/reference/cli.md', '/reference/config.md'],
+                // 该元素在当前路由路径是 /foo/ 开头时激活
+                // 支持正则表达式
+                activeMatch: '^/foo/',
+              },
+              {
+                text: '支付相关',
+                children: ['/reference/cli.md', '/reference/config.md'],
+                // 该元素在当前路由路径是 /foo/ 开头时激活
+                // 支持正则表达式
+                activeMatch: '^/foo/',
+              },
+
+            ],
           },
         ],
       },
