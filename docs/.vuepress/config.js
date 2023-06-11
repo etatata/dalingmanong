@@ -4,32 +4,74 @@ import { defaultTheme } from 'vuepress'
 export default defineUserConfig({
   lang: 'zh-CN',
   title: '大龄码农',
-  description: '这是我的第一个 VuePress 站点',
+  description: '解惑，学习后端的全方位网站资料库。',
   port:'8080',
   theme: defaultTheme({
     // 默认主题配置
     navbar: [
       {
-        text: '首页',
-        link: '/',
+        text: '常见问题',
+        link: '/question/',
       },
       // 嵌套 Group - 最大深度为 2
       {
-        text: 'PHP',
-        link: '/php/'
+        text: '知识星球',
+        link: '/star/'
       },
       {
-        text: '网络tcp-ip-http',
+        text: '码农指南',
         children: [
           {
-            text: 'SubGroup',
-            children: ['/tcpiphttp/', '/php/sub/bar.md'],
+            text: '必看',
+            link: '/coding_guide/',
+            // 该元素将一直处于激活状态
+            activeMatch: '/',
           },
+          {
+            text: '计算机基础',
+            link: '/coding_guide/fundamentals/',
+            // 该元素将一直处于激活状态
+            activeMatch: '/',
+          },
+          {
+            text: 'php编程',
+            link: '/coding_guide/php/',
+            // 该元素将一直处于激活状态
+            activeMatch: '/',
+          },
+          {
+            text: '数据存储',
+            link: '/coding_guide/database/',
+            // 该元素将一直处于激活状态
+            activeMatch: '/',
+          },
+          {
+            text: '设计和架构',
+            link: '/coding_guide/design_architecture/',
+            // 该元素将一直处于激活状态
+            activeMatch: '/',
+          },
+          {
+            text: '高可用',
+            link: '/coding_guide/high-availability/',
+            // 该元素将一直处于激活状态
+            activeMatch: '/',
+          },{
+            text: '高性能',
+            link: '/coding_guide/high-performance/',
+            // 该元素将一直处于激活状态
+            activeMatch: '/',
+          },{
+            text: '分布式',
+            link: '/coding_guide/distributed/',
+            // 该元素将一直处于激活状态
+            activeMatch: '/',
+          }
         ],
       },
       // 控制元素何时被激活
       {
-        text: 'MySql',
+        text: '开发项目',
         children: [
           {
             text: 'Always active',
@@ -46,14 +88,99 @@ export default defineUserConfig({
           },
         ],
       },
+      {
+        text: '面试指南',
+        children: [
+          {
+            text: 'Always active',
+            link: '/',
+            // 该元素将一直处于激活状态
+            activeMatch: '/',
+          },
+          {
+            text: 'Active on /foo/',
+            link: '/mysql/',
+            // 该元素在当前路由路径是 /foo/ 开头时激活
+            // 支持正则表达式
+            activeMatch: '^/foo/',
+          },
+        ],
+      }
     ],
     // 侧边栏对象
     // 不同子路径下的页面会使用不同的侧边栏
     sidebar: {
-        '/': [
+        '/coding_guide/': [
           {
-            text: '主页',
-            children: ['/guide/README.md', '/guide/getting-started.md'],
+            text: '必看',
+            children: [
+              {
+                text: '后端技术等级',
+                link: '/coding_guide/backend.md',
+                // 该元素在当前路由路径是 /foo/ 开头时激活
+                // 支持正则表达式
+                activeMatch: '^/foo/',
+              },{
+                text: '如何学习和解决问题',
+                link: '/coding_guide/how_learn.md',
+                // 该元素在当前路由路径是 /foo/ 开头时激活
+                // 支持正则表达式
+                activeMatch: '^/foo/',
+              },
+              {
+                text: '后端框架',
+                link: '/coding_guide/backend_architecture.md',
+                // 该元素在当前路由路径是 /foo/ 开头时激活
+                // 支持正则表达式
+                activeMatch: '^/foo/',
+              }
+            ],
+            // 该元素在当前路由路径是 /foo/ 开头时激活
+            // 支持正则表达式
+            activeMatch: '^/foo/',
+          },
+          {
+            text: '计算机基础',
+            children: [{
+              text: '操作系统',
+              link: '/coding_guide/1.md',
+              // 该元素在当前路由路径是 /foo/ 开头时激活
+              // 支持正则表达式
+              activeMatch: '^/foo/',
+            },
+            {
+              text: '网络基础',
+              link: '/coding_guide/2.md',
+              // 该元素在当前路由路径是 /foo/ 开头时激活
+              // 支持正则表达式
+              activeMatch: '^/foo/',
+            },
+            {
+              text: '数据结构和算法',
+              link: '/coding_guide/3.md',
+              // 该元素在当前路由路径是 /foo/ 开头时激活
+              // 支持正则表达式
+              activeMatch: '^/foo/',
+            }
+          
+          ],
+            // 该元素在当前路由路径是 /foo/ 开头时激活
+            // 支持正则表达式
+          
+          },
+          {
+            text: 'php编程',
+            children: ['/reference/cli.md', '/reference/config.md'],
+            // 该元素在当前路由路径是 /foo/ 开头时激活
+            // 支持正则表达式
+            activeMatch: '^/foo/',
+          },
+          {
+            text: '数据存储',
+            children: ['/reference/cli.md', '/reference/config.md'],
+            // 该元素在当前路由路径是 /foo/ 开头时激活
+            // 支持正则表达式
+            activeMatch: '^/foo/',
           },
         ],
         '/php/': [
