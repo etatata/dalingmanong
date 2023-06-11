@@ -2,11 +2,11 @@
 home: true
 actionText: 快速上手 →gaga
 features:
-- title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: Vue驱动
-  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-- title: 高性能
-  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+- title: 问题解惑
+  details: 技术老手在线答疑，快速解决编程难题，提升coding效率。。
+- title: 编程学习
+  details: 全方位，包括基础，语言，数据库，设计，高可用，高性能全面，多阶段的学习资料。
+- title: 面试辅助
+  details: 常见面试技巧，面试题解析，提高面试成功率。
 footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
