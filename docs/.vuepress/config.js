@@ -12,99 +12,33 @@ export default defineUserConfig({
       {
         text: '常见问题',
         link: '/question/',
+        activeMatch: '/question/',
       },
       // 嵌套 Group - 最大深度为 2
       {
         text: '知识星球',
-        link: '/star/'
+        link: '/star/',
+        activeMatch: '/star/',
       },
       {
         text: '码农指南',
-        children: [
-          {
-            text: '必看',
-            link: '/coding_guide/',
+        link: '/coding_guide/',
             // 该元素将一直处于激活状态
-            activeMatch: '/',
-          },
-          {
-            text: '计算机基础',
-            link: '/coding_guide/fundamentals/',
-            // 该元素将一直处于激活状态
-            activeMatch: '/',
-          },
-          {
-            text: 'php编程',
-            link: '/coding_guide/php/',
-            // 该元素将一直处于激活状态
-            activeMatch: '/',
-          },
-          {
-            text: '数据存储',
-            link: '/coding_guide/database/',
-            // 该元素将一直处于激活状态
-            activeMatch: '/',
-          },
-          {
-            text: '设计和架构',
-            link: '/coding_guide/design_architecture/',
-            // 该元素将一直处于激活状态
-            activeMatch: '/',
-          },
-          {
-            text: '高可用',
-            link: '/coding_guide/high-availability/',
-            // 该元素将一直处于激活状态
-            activeMatch: '/',
-          },{
-            text: '高性能',
-            link: '/coding_guide/high-performance/',
-            // 该元素将一直处于激活状态
-            activeMatch: '/',
-          },{
-            text: '分布式',
-            link: '/coding_guide/distributed/',
-            // 该元素将一直处于激活状态
-            activeMatch: '/',
-          }
-        ],
+        activeMatch: '/coding_guide/',
+       
       },
       // 控制元素何时被激活
       {
         text: '开发项目',
-        children: [
-          {
-            text: 'Always active',
-            link: '/',
-            // 该元素将一直处于激活状态
-            activeMatch: '/',
-          },
-          {
-            text: 'Active on /foo/',
-            link: '/mysql/',
-            // 该元素在当前路由路径是 /foo/ 开头时激活
-            // 支持正则表达式
-            activeMatch: '^/foo/',
-          },
-        ],
+        link: '/development_project/',
+              // 该元素将一直处于激活状态
+          activeMatch: '/development_project/',
       },
       {
         text: '面试指南',
-        children: [
-          {
-            text: 'Always active',
-            link: '/',
-            // 该元素将一直处于激活状态
-            activeMatch: '/',
-          },
-          {
-            text: 'Active on /foo/',
-            link: '/mysql/',
-            // 该元素在当前路由路径是 /foo/ 开头时激活
-            // 支持正则表达式
-            activeMatch: '^/foo/',
-          },
-        ],
+        link: '/seek_job/',
+              // 该元素将一直处于激活状态
+        activeMatch: '/seek_job/',
       }
     ],
     // 侧边栏对象
@@ -216,6 +150,6 @@ export default defineUserConfig({
 
        // 如果你按照 `organization/repository` 的格式设置它
     // 你也可以直接将它设置为一个 URL
-    repo: 'https://github.com/etatata/coding1011',
+    repo: 'https://github.com/etatata/dalingmanong',
     })
 })
