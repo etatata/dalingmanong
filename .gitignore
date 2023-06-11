@@ -2,3 +2,5 @@ node_modules
 .temp
 .cache
 nohup.out
+docs/.vuepress/.temp/
+docs/.vuepress/.cache/
