@@ -5,6 +5,7 @@ export default defineUserConfig({
   lang: 'zh-CN',
   title: '大龄码农',
   description: '这是我的第一个 VuePress 站点',
+  port:'8080',
   theme: defaultTheme({
     // 默认主题配置
     navbar: [
