@@ -19,11 +19,11 @@ export default defineUserConfig({
         link: '/php/'
       },
       {
-        text: '网络',
+        text: '网络tcp-ip-http',
         children: [
           {
             text: 'SubGroup',
-            children: ['/php/sub/foo.md', '/php/sub/bar.md'],
+            children: ['/tcpiphttp/', '/php/sub/bar.md'],
           },
         ],
       },
@@ -39,7 +39,7 @@ export default defineUserConfig({
           },
           {
             text: 'Active on /foo/',
-            link: '/not-foo/',
+            link: '/mysql/',
             // 该元素在当前路由路径是 /foo/ 开头时激活
             // 支持正则表达式
             activeMatch: '^/foo/',
