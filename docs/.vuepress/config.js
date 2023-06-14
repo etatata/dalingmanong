@@ -116,6 +116,28 @@ export default defineUserConfig({
             // 支持正则表达式
             activeMatch: '^/foo/',
           },
+          {
+            text: '代码设计和架构',
+            children: [
+              {
+                text: '关于代码设计',
+                link: '/coding_guide/design_architecture/about_code_design.md',
+                // 该元素在当前路由路径是 /foo/ 开头时激活
+                // 支持正则表达式
+                activeMatch: '^/foo/',
+              },
+              {
+                text: '如何学习和解决问题',
+                link: '/coding_guide/how_learn.md',
+                // 该元素在当前路由路径是 /foo/ 开头时激活
+                // 支持正则表达式
+                activeMatch: '^/foo/',
+              }
+            ],
+            // 该元素在当前路由路径是 /foo/ 开头时激活
+            // 支持正则表达式
+            activeMatch: '^/foo/',
+          },
         ],
         '/question/': [
           {
