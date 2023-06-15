@@ -81,6 +81,15 @@ export default defineUserConfig({
               // 该元素在当前路由路径是 /foo/ 开头时激活
               // 支持正则表达式
               activeMatch: '^/foo/',
+              children: [{
+                text: '内存管理',
+                link: '/coding_guide/1.md',
+                // 该元素在当前路由路径是 /foo/ 开头时激活
+                // 支持正则表达式
+                activeMatch: '^/foo/',
+                
+              }
+              ]
             },
             {
               text: '网络基础',
