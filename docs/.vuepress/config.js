@@ -151,7 +151,7 @@ export default defineUserConfig({
               },
               {
                 text: '设计模式是什么？',
-                link: '/coding_guide/design_architecture/what_is_Design_pattern.md',
+                link: '/coding_guide/design_architecture/what_is_design_patterns.md',
                 // 该元素在当前路由路径是 /foo/ 开头时激活
                 // 支持正则表达式
                 activeMatch: '^/foo/',
