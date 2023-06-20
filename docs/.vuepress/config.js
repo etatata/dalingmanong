@@ -141,6 +141,20 @@ export default defineUserConfig({
                 // 该元素在当前路由路径是 /foo/ 开头时激活
                 // 支持正则表达式
                 activeMatch: '^/foo/',
+              },
+              {
+                text: '关于代码设计',
+                link: '/coding_guide/design_architecture/about_code_design.md',
+                // 该元素在当前路由路径是 /foo/ 开头时激活
+                // 支持正则表达式
+                activeMatch: '^/foo/',
+              },
+              {
+                text: '设计模式是什么？',
+                link: '/coding_guide/design_architecture/what_is_Design_pattern.md',
+                // 该元素在当前路由路径是 /foo/ 开头时激活
+                // 支持正则表达式
+                activeMatch: '^/foo/',
               }
             ],
             // 该元素在当前路由路径是 /foo/ 开头时激活
